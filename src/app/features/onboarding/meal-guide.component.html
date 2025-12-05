@@ -1,0 +1,93 @@
+<div class="font-display">
+  <div class="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+    <div class="layout-container flex h-full grow flex-col">
+      <div class="px-4 md:px-20 lg:px-40 flex flex-1 justify-center py-10 sm:py-16">
+        <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+          <div class="absolute top-6 right-6">
+            <button class="flex items-center justify-center h-10 w-10 rounded-full bg-white/50 dark:bg-black/20 text-gray-600 dark:text-gray-300 hover:bg-white/70 dark:hover:bg-black/40 transition-colors">
+              <span class="material-symbols-outlined text-2xl">close</span>
+            </button>
+          </div>
+          <div class="flex flex-wrap justify-between gap-3 p-4">
+            <div class="flex min-w-72 flex-col gap-3">
+              <p class="text-gray-900 dark:text-gray-50 text-4xl font-black leading-tight tracking-[-0.033em]">Welcome! Let's Record Your First Meal.</p>
+              <p class="text-gray-600 dark:text-gray-400 text-base font-normal leading-normal">Accurate meal tracking is crucial for fair billing and efficient mess management. This quick guide will show you how simple it is.</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3 p-4 mt-6">
+            <div class="flex gap-6 justify-between">
+              <p class="text-gray-800 dark:text-gray-200 text-base font-medium leading-normal">Step 1 of 3</p>
+            </div>
+            <div class="rounded-full bg-primary/20">
+              <div class="h-2 rounded-full bg-primary" style="width: 33%;"></div>
+            </div>
+          </div>
+          <div class="mt-8">
+            <h2 class="text-gray-900 dark:text-gray-50 text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">The Quick Input Dashboard</h2>
+            <p class="text-gray-700 dark:text-gray-300 text-base font-normal leading-normal pb-3 pt-1 px-4">This is your main dashboard for meal entry. Below are the key components you'll use to manage your meals daily.</p>
+            <div class="flex w-full grow bg-background-light dark:bg-background-dark @container p-4">
+              <div class="w-full gap-1 overflow-hidden bg-background-light dark:bg-background-dark @[480px]:gap-2 aspect-[16/9] flex rounded-xl border border-gray-200 dark:border-gray-800">
+                <div class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-xl flex-1" data-alt="An annotated screenshot of the meal entry dashboard, highlighting the date selector, meal toggles for breakfast, lunch, and dinner, and the save button." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCZ0FJrMlt-g4PZHhmW79Pyn8EZHT5odv4lp307oZ5GJeDpePS6zF95gUCEcTZIfYMoqnfNXaw2XERk-PSTsk-0F3ZFEZYioPmYSL5RKkCRch7T4FbMuiqWuUfUH981bj2Bs32G_PxWDtZjb1ok6Wp7oYlTCbgZoGeV2ZrbaJa1khBVVRLcdrChIIgAVnQkPZd33fBqGQj1Plf147WXUs-zymFHibe3XfDJgTn59LIo6pr5CxmBALLvxO3_vU5d7hllhaRlQDm2IedB');"></div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-8">
+            <h2 class="text-gray-900 dark:text-gray-50 text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">How to Enter Your Meals</h2>
+            <p class="text-gray-700 dark:text-gray-300 text-base font-normal leading-normal pb-3 pt-1 px-4">Follow these three simple steps to log your meals for any given day. It takes less than a minute!</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-4 mt-4">
+              <div class="flex flex-col gap-4 p-6 rounded-xl bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800">
+                <div class="flex items-center justify-center h-12 w-12 rounded-full bg-primary/20 text-primary">
+                  <span class="material-symbols-outlined text-2xl">calendar_month</span>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 dark:text-gray-50">1. Select the Date</h3>
+                <p class="text-gray-600 dark:text-gray-400">Use the date selector to pick the day you want to record meals for. You can log for today or upcoming days.</p>
+              </div>
+              <div class="flex flex-col gap-4 p-6 rounded-xl bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800">
+                <div class="flex items-center justify-center h-12 w-12 rounded-full bg-primary/20 text-primary">
+                  <span class="material-symbols-outlined text-2xl">toggle_on</span>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 dark:text-gray-50">2. Toggle Your Meals</h3>
+                <p class="text-gray-600 dark:text-gray-400">Switch the toggles 'ON' for meals you will have (Breakfast, Lunch, Dinner). They are 'ON' by default.</p>
+              </div>
+              <div class="flex flex-col gap-4 p-6 rounded-xl bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800">
+                <div class="flex items-center justify-center h-12 w-12 rounded-full bg-primary/20 text-primary">
+                  <span class="material-symbols-outlined text-2xl">check_circle</span>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 dark:text-gray-50">3. Click 'Save Meals'</h3>
+                <p class="text-gray-600 dark:text-gray-400">Once you're done, hit the 'Save Meals' button to confirm your entry. A confirmation will appear.</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 mt-8">
+            <details class="group rounded-xl bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 overflow-hidden">
+              <summary class="flex cursor-pointer list-none items-center justify-between p-6 text-lg font-medium text-gray-900 dark:text-gray-50">
+                Pro-Tip: Why This is Important
+                <div class="text-gray-500 dark:text-gray-400">
+                  <svg class="block h-5 w-5 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.5 8.25l-7.5 7.5-7.5-7.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+              </summary>
+              <div class="border-t border-gray-200 dark:border-gray-800 p-6 text-gray-600 dark:text-gray-400">
+                Accurate meal entries ensure the mess manager purchases the right amount of ingredients, reducing food waste and keeping costs down for everyone. It also guarantees your monthly bill is fair and precise.
+              </div>
+            </details>
+          </div>
+          <div class="flex flex-col items-center gap-6 p-4 mt-10 text-center">
+            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-primary text-gray-900">
+              <span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1, 'wght' 500;">verified</span>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h2 class="text-gray-900 dark:text-gray-50 text-2xl font-bold">That's It! You're All Set.</h2>
+              <p class="text-gray-600 dark:text-gray-400 max-w-md mx-auto">You now know everything you need to manage your meals. If you ever need a refresher, you can find this guide in the help section.</p>
+            </div>
+            <a routerLink="/onboarding/preferences" class="flex items-center justify-center gap-2 h-12 px-8 text-base font-bold rounded-full bg-primary text-gray-900 hover:bg-opacity-90 transition-all">
+              <span>Go to Dashboard</span>
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
