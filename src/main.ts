@@ -1,6 +1,24 @@
+import { provideZoneChangeDetection } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
+import { provideAnimations } from '@angular/platform-browser/animations';
+import { provideHttpClient } from '@angular/common/http';
+import { provideToastr } from 'ngx-toastr';
+import { AppComponent } from './app/app.component';
 import { appConfig } from './app/app.config';
-import { App } from './app/app';
+import { LenisService } from './app/services/lenis.service';
+import { register } from 'swiper/element/bundle';
+import 'aos/dist/aos.css';
 
-bootstrapApplication(App, appConfig)
-  .catch((err) => console.error(err));
+register();
+
+bootstrapApplication(AppComponent, {
+  ...appConfig,
+  providers: [
+    provideZoneChangeDetection({ eventCoalescing: true, runCoalescing: true }),
+    ...(appConfig?.providers ?? []),
+    provideAnimations(),
+    provideHttpClient(),
+    provideToastr(),
+    LenisService,
+  ],
+}).catch((err) => console.error(err));
